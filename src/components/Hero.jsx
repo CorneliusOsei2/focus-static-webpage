@@ -35,11 +35,11 @@ export function Hero() {
         >
           {[
             [
-              { name: 'Facebook', logo: logoFacebook },
-              { name: 'LinkedIn', logo: logoLinkedIn },
+              { name: 'Facebook', logo: logoFacebook, mediaUrl: "https://www.facebook.com/focusgoc?mibextid=b06tZ0" },
+              { name: 'LinkedIn', logo: logoLinkedIn, mediaUrl: "https://www.linkedin.com/company/focus-group-of-companies/" },
             ],
             [
-              { name: 'Instagram', logo: logoInstagram },
+              { name: 'Instagram', logo: logoInstagram, mediaUrl: "https://instagram.com/focus_inc_" },
               { name: 'Twitter', logo: logoTwitter },
             ],
           ].map((group, groupIndex) => (
@@ -48,9 +48,11 @@ export function Hero() {
                 role="list"
                 className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
               >
-                {group.map((company) => (
-                  <li key={company.name} className="flex">
-                    <Image src={company.logo} alt={company.name} sizes="42.75rem" width={55} height={30} />
+                {group.map((media) => (
+                  <li key={media.name} className="flex">
+                    <a href={media.mediaUrl}>
+                      <Image src={media.logo} alt={media.name} sizes="42.75rem" width={55} height={30} />
+                    </a>
                   </li>
                 ))}
               </ul>

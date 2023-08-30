@@ -1,9 +1,7 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
+import profileImage from '@/images/avatars/profile.jpeg'
 import backgroundImage from '@/images/background-features.jpg'
 
 const testimonials = [
@@ -18,7 +16,7 @@ const testimonials = [
       author: {
         name: 'Mr. Asare',
         location: 'Labadi, Accra',
-        image: avatarImage1,
+        image: profileImage,
       },
     },
 
@@ -34,7 +32,7 @@ const testimonials = [
       author: {
         name: 'Mr. Osei',
         location: 'Drobonso',
-        image: avatarImage4,
+        image: profileImage,
       },
     },
   ],
@@ -49,7 +47,7 @@ const testimonials = [
       author: {
         name: 'Ama',
         location: 'Cook and Food Blogger',
-        image: avatarImage3,
+        image: profileImage,
       },
     },
   ],

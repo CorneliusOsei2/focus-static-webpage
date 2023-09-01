@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import backgroundImage from '@/images/background-auth.jpg'
-
 export function SlimLayout({ children }) {
   return (
     <>
@@ -14,7 +12,7 @@ export function SlimLayout({ children }) {
         <div className="hidden sm:contents lg:relative lg:block lg:flex-1">
           <Image
             className="absolute inset-0 h-full w-full object-cover"
-            src={backgroundImage}
+            src={"https://res.cloudinary.com/djykqimfx/image/upload/v1693434819/focus/background-auth.jpg.jpg"}
             alt=""
             unoptimized
           />

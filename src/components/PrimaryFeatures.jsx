@@ -6,7 +6,6 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
 import productPigs from '@/images/products/pigs.jpeg'
 import productGoats from '@/images/products/goats.jpeg'
 import productPoultry from '@/images/products/poultry.jpeg'
@@ -16,7 +15,7 @@ const features = [
     title: 'Goat World',
     description:
       "We are passionate about raising and nurturing healthy and thriving goats.  \
-      We take pridce in our diverse selection of goat breeds, including the popular Boer, Saanen\
+      We take pride in our diverse selection of goat breeds, including the popular Boer, Saanen\
       Nubian and Alpine breeds.\
       Whether you are a farmer or hobbyist, we have goats that suit your specific needs.",
     image: productGoats,
@@ -67,7 +66,7 @@ export function PrimaryFeatures() {
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
+        src={"https://res.cloudinary.com/djykqimfx/image/upload/v1693434800/focus/background-features.jpg.jpg"}
         alt=""
         width={2245}
         height={1636}

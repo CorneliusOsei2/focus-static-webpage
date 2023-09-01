@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import profileImage from '@/images/avatars/profile.jpeg'
-import backgroundImage from '@/images/background-features.jpg'
+
 
 const testimonials = [
   [
@@ -70,7 +70,7 @@ export function Testimonials() {
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
+        src={"https://res.cloudinary.com/djykqimfx/image/upload/v1693434800/focus/background-features.jpg.jpg"}
         alt=""
         width={2245}
         height={1636}

@@ -40,7 +40,7 @@ const features = [
   },
 ]
 
-export function PrimaryFeatures() {
+export function Products() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
+      id="products"
       aria-label="Features for running your books"
       className="relative overflow-hidden pb-28 pt-24 sm:py-36"
     >

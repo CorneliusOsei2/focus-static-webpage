@@ -6,9 +6,6 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 import packagingIcon from '@/images/logos/packaging.jpeg'
 import deliveryIcon from '@/images/logos/delivery.jpeg'
@@ -20,7 +17,7 @@ const features = [
     name: 'Free Packaging.',
     summary: 'We utilize utilize state-of-the-art packaging to ensure meat remains intact and well-preserved\
                         during transportation.',
-    image: screenshotProfitLoss,
+    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601454/focus/screenshots/darth-liu-hf_i6mm88pM-unsplash_aebzfd.jpg",
     icon: packagingIcon,
   },
   {
@@ -28,14 +25,14 @@ const features = [
     summary:
       'Hassle-free delivery to anywhere in Accra and Kumasi, in a timely manner - irrespective of order\
       quantity. .',
-    image: screenshotInventory,
+    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601610/focus/screenshots/mishaal-zahed-w8X2pbw4O2g-unsplash_xhue4l.jpg",
     icon: deliveryIcon,
   },
   {
     name: 'Training',
     summary:
       'Comprehensive resources and guidance on animal care, breeding, nutrition, and health management.',
-    image: screenshotContacts,
+    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601910/focus/screenshots/jason-goodman-Oalh2MojUuk-unsplash_xf02aj.jpg",
     icon: trainingIcon
   },
 ]
@@ -86,6 +83,8 @@ function FeaturesMobile() {
                 src={feature.image}
                 alt=""
                 sizes="52.75rem"
+                width={2245} 
+                height={500}
               />
             </div>
           </div>
@@ -137,6 +136,8 @@ function FeaturesDesktop() {
                       src={feature.image}
                       alt=""
                       sizes="52.75rem"
+                      width={2245} 
+                      height={500}
                     />
                   </div>
                 </Tab.Panel>
@@ -150,7 +151,7 @@ function FeaturesDesktop() {
   )
 }
 
-export function SecondaryFeatures() {
+export function Services() {
   return (
     <section
       id="secondary-features"

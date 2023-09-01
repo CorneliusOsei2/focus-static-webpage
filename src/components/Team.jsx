@@ -49,7 +49,7 @@ const execs = [
   {
     name: 'Daniel Amoateng ',
     role: 'Executive Member',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413853/focus/team/jim.jpeg.jpg",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -59,7 +59,7 @@ const team = [
   {
     name: 'Emmanuel Dodoo',
     role: 'Frontend Developer',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413853/focus/team/jim.jpeg.jpg",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
     instagramUrl: '#'
@@ -67,15 +67,15 @@ const team = [
   {
     name: 'Rukaya Alidu',
     role: 'Marketting Intern, 2022',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413854/focus/team/corn.png.png",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
     githubUrl: '#'
   },
   {
-    name: ' Okwen',
+    name: 'Wisdom Okwen',
     role: 'Software Developer Intern',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413853/focus/team/jim.jpeg.jpg",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
     instagramUrl: '#'
@@ -83,14 +83,14 @@ const team = [
   {
     name: 'Grace Mireku',
     role: 'Copywriter',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413853/focus/team/grace.jpeg.jpg",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Yaw Dankwa',
     role: 'Software Developer Intern',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413853/focus/team/awo.jpeg.jpg",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
     instagramUrl: '#'
@@ -98,7 +98,7 @@ const team = [
   {
     name: 'Ankomah Kofi Junior ',
     role: 'Architecture Intern, 2021',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413853/focus/team/jim.jpeg.jpg ",
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -106,7 +106,7 @@ const team = [
 
 export function Team() {
   return (
-    <div className="bg-white py-32">
+    <div className="bg-white py-32" id='team'>
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
@@ -136,14 +136,6 @@ export function Team() {
           >
             {team.map((person) => (
               <li key={person.name}>
-                {/* <Image
-                  className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-                  src={"https://res.cloudinary.com/djykqimfx/image/upload/v1693434800/focus/background-features.jpg.jpg"}
-                  alt=""
-                  width={2245}
-                  height={1636}
-                  unoptimized
-                /> */}
                 <Image className="mx-auto h-50 w-56 rounded-full" src={person.imageUrl} alt="" width={2245} height={1636}/>
                 <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                 <p className="text-sm leading-6 text-gray-600">{person.role}</p>

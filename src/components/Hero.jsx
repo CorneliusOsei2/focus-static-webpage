@@ -1,10 +1,6 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import logoFacebook from '@/images/logos/fb.png'
-import logoInstagram from '@/images/logos/ig.png'
-import logoTwitter from '@/images/logos/twitter.png'
-import logoLinkedIn from '@/images/logos/linkedin.png'
 
 export function Hero() {
   return (
@@ -35,12 +31,12 @@ export function Hero() {
         >
           {[
             [
-              { name: 'Facebook', logo: logoFacebook, mediaUrl: "https://www.facebook.com/focusgoc?mibextid=b06tZ0" },
-              { name: 'LinkedIn', logo: logoLinkedIn, mediaUrl: "https://www.linkedin.com/company/focus-group-of-companies/" },
+              { name: 'Facebook', logo: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412657/focus/logos/fb.png.png", mediaUrl: "https://www.facebook.com/focusgoc?mibextid=b06tZ0" },
+              { name: 'LinkedIn', logo: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412775/focus/logos/linkedin.png.jpg", mediaUrl: "https://www.linkedin.com/company/focus-group-of-companies/" },
             ],
             [
-              { name: 'Instagram', logo: logoInstagram, mediaUrl: "https://instagram.com/focus_inc_" },
-              { name: 'Twitter', logo: logoTwitter },
+              { name: 'Instagram', logo: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412658/focus/logos/ig.png.png", mediaUrl: "https://instagram.com/focus_inc_" },
+              { name: 'Twitter', logo: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412776/focus/logos/twitter.png.png" },
             ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>

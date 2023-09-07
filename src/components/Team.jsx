@@ -1,11 +1,5 @@
 import Image from 'next/image'
 
-import jimPicture from '@/images/team/jim.jpeg'
-import awoPicture from '@/images/team/awo.jpeg'
-import bannorPicture from '@/images/team/bannor.jpeg'
-import gracePicture from '@/images/team/grace.jpeg'
-import cornPicture from '@/images/team/corn.png'
-
 
 const execs = [
   {
@@ -47,61 +41,61 @@ const execs = [
     linkedinUrl: '#',
   },
   {
-    name: 'Daniel Amoateng ',
-    role: 'Executive Member',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+    name: 'Wisdom Okwen ',
+    role: 'Software Developer Intern',
+    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1694114558/focus/team/IMG-20230513-WA0015_1_rkeobe.jpg",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
 ]
 
 const team = [
-  {
-    name: 'Emmanuel Dodoo',
-    role: 'Frontend Developer',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-    instagramUrl: '#'
-  },
-  {
-    name: 'Rukaya Alidu',
-    role: 'Marketting Intern, 2022',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    name: 'Wisdom Okwen',
-    role: 'Software Developer Intern',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-    instagramUrl: '#'
-  },
-  {
-    name: 'Grace Mireku',
-    role: 'Copywriter',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Yaw Dankwa',
-    role: 'Software Developer Intern',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-    instagramUrl: '#'
-  },
-  {
-    name: 'Ankomah Kofi Junior ',
-    role: 'Architecture Intern, 2021',
-    imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
+  // {
+  //   name: 'Emmanuel Dodoo',
+  //   role: 'Frontend Developer',
+  //   imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  //   instagramUrl: '#'
+  // },
+  // {
+  //   name: 'Rukaya Alidu',
+  //   role: 'Marketting Intern, 2022',
+  //   imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  //   githubUrl: '#'
+  // },
+  // {
+  //   name: 'Daniel Amoateng',
+  //   role: 'Executive Member',
+  //   imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  //   instagramUrl: '#'
+  // },
+  // {
+  //   name: 'Grace Mireku',
+  //   role: 'Copywriter',
+  //   imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  // },
+  // {
+  //   name: 'Yaw Dankwa',
+  //   role: 'Software Developer Intern',
+  //   imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  //   instagramUrl: '#'
+  // },
+  // {
+  //   name: 'Ankomah Kofi Junior ',
+  //   role: 'Architecture Intern, 2021',
+  //   imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  // },
 ]
 
 export function Team() {

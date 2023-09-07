@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import profileImage from '@/images/avatars/profile.jpeg'
 
 
 const testimonials = [
@@ -16,7 +15,7 @@ const testimonials = [
       author: {
         name: 'Mr. Asare',
         location: 'Labadi, Accra',
-        image: profileImage,
+        image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
       },
     },
 
@@ -32,7 +31,7 @@ const testimonials = [
       author: {
         name: 'Mr. Osei',
         location: 'Drobonso',
-        image: profileImage,
+        image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
       },
     },
   ],
@@ -47,7 +46,7 @@ const testimonials = [
       author: {
         name: 'Ama',
         location: 'Cook and Food Blogger',
-        image: profileImage,
+        image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412491/focus/avatars/profile.jpeg.jpg",
       },
     },
   ],

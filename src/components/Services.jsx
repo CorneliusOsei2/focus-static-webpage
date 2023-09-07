@@ -7,10 +7,6 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 
-import packagingIcon from '@/images/logos/packaging.jpeg'
-import deliveryIcon from '@/images/logos/delivery.jpeg'
-import trainingIcon from '@/images/logos/training.jpeg'
-
 
 const features = [
   {
@@ -18,7 +14,7 @@ const features = [
     summary: 'We utilize utilize state-of-the-art packaging to ensure meat remains intact and well-preserved\
                         during transportation.',
     image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601454/focus/screenshots/darth-liu-hf_i6mm88pM-unsplash_aebzfd.jpg",
-    icon: packagingIcon,
+    icon: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412775/focus/logos/packaging.jpeg.jpg",
   },
   {
     name: 'Fast Delivery',
@@ -26,14 +22,14 @@ const features = [
       'Hassle-free delivery to anywhere in Accra and Kumasi, in a timely manner - irrespective of order\
       quantity. .',
     image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601610/focus/screenshots/mishaal-zahed-w8X2pbw4O2g-unsplash_xhue4l.jpg",
-    icon: deliveryIcon,
+    icon: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412658/focus/logos/delivery.jpeg.jpg",
   },
   {
     name: 'Training',
     summary:
       'Comprehensive resources and guidance on animal care, breeding, nutrition, and health management.',
     image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601910/focus/screenshots/jason-goodman-Oalh2MojUuk-unsplash_xf02aj.jpg",
-    icon: trainingIcon
+    icon: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412776/focus/logos/training.jpeg.jpg"
   },
 ]
 
@@ -49,7 +45,11 @@ function Feature({ feature, isActive, className, ...props }) {
           isActive ? 'bg-green-600' : 'bg-slate-500',
         )}
       >
-        <Image src={feature.icon} />
+        <
+          Image src={feature.icon} 
+          width={2245} 
+          height={500}
+        />
       </div>
       <h3
         className={clsx(

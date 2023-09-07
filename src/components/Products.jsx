@@ -6,9 +6,6 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import productPigs from '@/images/products/pigs.jpeg'
-import productGoats from '@/images/products/goats.jpeg'
-import productPoultry from '@/images/products/poultry.jpeg'
 
 const features = [
   {
@@ -18,7 +15,7 @@ const features = [
       We take pride in our diverse selection of goat breeds, including the popular Boer, Saanen\
       Nubian and Alpine breeds.\
       Whether you are a farmer or hobbyist, we have goats that suit your specific needs.",
-    image: productGoats,
+    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413404/focus/products/goats.jpeg.jpg",
   },
   {
     title: 'Pig Paradise',
@@ -27,7 +24,7 @@ const features = [
       standards to suit your desired tastes and needs. We offer variety of pig  breeds : Duroc, Yorkshire,\
       Hampshire, and Landrace. \
       Our state-of-the-art facilities ensure the pigs are raised in a clean and comfortable environment.",
-    image: productPigs,
+    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413405/focus/products/pigs.jpeg.jpg",
   },
   {
     title: 'Poultry',
@@ -36,7 +33,7 @@ const features = [
       processing, we have got you!\
       We have a house of  broilers, layers and heritage breeds.\
       We take great pride in their genetics, robustness and resistance to infections. ",
-    image: productPoultry,
+    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693413404/focus/products/poultry.jpeg.jpg",
   },
 ]
 
@@ -140,6 +137,8 @@ export function Products() {
                       <Image
                         className="w-full"
                         src={feature.image}
+                        width={2245} 
+                        height={500}
                         alt=""
                         priority
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"

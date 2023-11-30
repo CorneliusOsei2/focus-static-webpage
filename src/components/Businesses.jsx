@@ -6,19 +6,24 @@ const businesses = [
   {
     name: 'Jadaad Farms',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      "Our journey begins with animal rearing, where we strive to make Ghana self-sufficient in meat production. \
+      With a keen focus on goats and sheep, two of West Africa's most beloved meats, we aim to enhance production,\
+       create affordability, and establish a thriving market for high - quality meat.",
     icon: DeviceArrowIcon,
     link: "#jfarms"
   },
   {
     name: 'Data Analytics',
     description:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
+      "We recognize the transformative power of data analytics and digital marketing in shaping the future of \
+     agriculture and business in Africa. Our dedicated analytics firm collaborates seamlessly with both small and\
+      large enterprises in Ghana, providing cutting-edge solutions for data management and analysis, empowering \
+      businesses to make informed decisions and unlock new opportunities for growth",
     icon: DeviceClockIcon,
     link: "#jfarms"
   },
   {
-    name: 'Advertising and Marketting',
+    name: 'Training and Bootcamps',
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
     icon: DeviceListIcon,

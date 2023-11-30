@@ -55,6 +55,14 @@ function Photos() {
 }
 
 export default async function Home() {
+  const about = ""
+
+  const vision = "We aim to be a beacon of innovation and excellence, \
+  leading the way in sustainable agriculture, animal husbandry, and scientific research across Africa. We\
+   envision a continent where communities thrive through self-sufficiency in food production,\
+   where youth find fulfilling employment opportunities, and where cutting-edge technologies and scientific \
+   advancements contribute to a resilient and secure food supply."
+
   return (
     <>
       <Container className="mt-9 text-sm">
@@ -76,10 +84,10 @@ export default async function Home() {
             </span>{' '}
             in Africa.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400 w-1/2 pl-3">
+            <h3 className='font-semibold text-green-700 text-lg'>Mission</h3>
+            <p className='text-start'>{vision} </p>
+          </div>
           <div className="mt-6 flex gap-6 mx-auto">
             <SocialLink
               href="https://twitter.com"

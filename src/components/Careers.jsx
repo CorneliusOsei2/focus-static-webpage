@@ -17,7 +17,7 @@ const jobs = {
         { title: "", salary: 0.0, location: "", mode: "", link: "" },
     ],
     "Engineering": [
-        { title: "", salary: 0.0, location: "", mode: "Online", link: "" },
+        { title: "Software Engineer Intern", salary: 0.0, location: "", mode: "Online", link: "" },
         { title: "", salary: 0.0, location: "", mode: "", link: "" },
     ],
     "Marketting": [
@@ -42,7 +42,7 @@ export function Navigation({ group, setGroup }) {
                     name="tabs"
                     className="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm"
                     defaultValue={tabs.find((tab) => tab)}
-                    onChange={(tab) => setGroup(tab)}
+                    onChange={(e) => setGroup(e.target.value)}
                 >
                     {tabs.map((tab, index) => (
                         <option key={index}>{tab}</option>
@@ -58,7 +58,7 @@ export function Navigation({ group, setGroup }) {
                                 onClick={() => setGroup(tab)}
                                 className={clsx(
                                     tab === group
-                                        ? 'border-green-500 text-green-600'
+                                        ? 'border-green-700 text-green-700'
                                         : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                                     'whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium'
                                 )}
@@ -83,22 +83,29 @@ export function Careers() {
                 Careers.
             </h2>
             <Navigation group={group} setGroup={setGroup} />
-            <section>
-                <ul>
-                    {
-                        jobs[group].map((job, index) => (
-                            <li key={index}>
-                                <span>{job.title}</span>
-                                <span>{job.salary}</span>
-                                <span>{job.location}</span>
-                                <span>{job.mlode}</span>
-                            </li>
-                        ))
-                    }
-                </ul>
-
-            </section>
-
+            {
+                <>
+                    <thead>
+                    </thead>
+                    <tbody className="bg-white">
+                        {jobs[group].map((job, index) => (
+                            <tr key={index} className="even:bg-gray-50">
+                                <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-3">
+                                    {job.name}
+                                </td>
+                                <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{job.title}</td>
+                                <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{job.location}</td>
+                                <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{job.salary}</td>
+                                <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-3">
+                                    <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                                        Apply Here!
+                                    </a>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </>
+            }
         </div>
     )
 }

@@ -192,7 +192,7 @@ function DeviceChartIcon(props) {
   )
 }
 
-export function Services() {
+export function Businesses() {
   return (
     <section
       id="businesses"

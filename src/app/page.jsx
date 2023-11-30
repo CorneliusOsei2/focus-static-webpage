@@ -13,8 +13,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { Services } from '@/components/Services'
-import { Reviews } from '@/components/Reviews'
+import { Businesses } from '@/components/Businesses'
 import { Team } from '@/components/Team'
 import { JFarm } from '@/components/JFarm'
 import { Careers } from '@/components/Careers'
@@ -100,7 +99,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      <Services />
+      <Businesses />
       <Container className="mt-24 md:mt-28">
         <Photos />
         <JFarm />

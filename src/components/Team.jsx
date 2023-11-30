@@ -47,7 +47,7 @@ const execs = [
     },
     {
         name: 'Wisdom Okwen ',
-        role: 'Software Developer Intern',
+        role: 'Software Developer',
         imageUrl: "https://res.cloudinary.com/djykqimfx/image/upload/v1694114558/focus/team/IMG-20230513-WA0015_1_rkeobe.jpg",
         twitterUrl: '#',
         linkedinUrl: '#',

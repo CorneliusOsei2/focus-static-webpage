@@ -78,7 +78,7 @@ export function Careers() {
     const [group, setGroup] = useState("Agriculture");
 
     return (
-        <div className='mt-12'>
+        <div className='mt-12' id="careers">
             <h2 className="text-3xl  text-center font-bold tracking-tight text-green-700 sm:text-4xl">
                 Careers.
             </h2>

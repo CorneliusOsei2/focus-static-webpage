@@ -101,7 +101,7 @@ export function Businesses() {
     >
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl -mb-6 text-center font-bold tracking-tight text-green-700 sm:text-4xl">
+          <h2 className="text-3xl md:-mb-6 text-center font-bold tracking-tight text-green-700 sm:text-4xl">
             Our Ventures.
           </h2>
         </div>

@@ -86,8 +86,8 @@ export function Careers() {
             <section>
                 <ul>
                     {
-                        jobs[group].map((job) => (
-                            <li>
+                        jobs[group].map((job, index) => (
+                            <li key={index}>
                                 <span>{job.title}</span>
                                 <span>{job.salary}</span>
                                 <span>{job.location}</span>

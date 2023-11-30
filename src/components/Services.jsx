@@ -1,171 +1,228 @@
-'use client'
-
 import { useId } from 'react'
-import Image from 'next/image'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 
-
-const features = [
+const businesses = [
   {
-    name: 'Free Packaging.',
-    summary: 'We utilize utilize state-of-the-art packaging to ensure meat remains intact and well-preserved\
-                        during transportation.',
-    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601454/focus/screenshots/darth-liu-hf_i6mm88pM-unsplash_aebzfd.jpg",
-    icon: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412775/focus/logos/packaging.jpeg.jpg",
+    name: 'Jadaad Farms',
+    description:
+      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+    icon: DeviceArrowIcon,
+    link: "#jfarms"
   },
   {
-    name: 'Fast Delivery',
-    summary:
-      'Hassle-free delivery to anywhere in Accra and Kumasi, in a timely manner - irrespective of order\
-      quantity. .',
-    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601610/focus/screenshots/mishaal-zahed-w8X2pbw4O2g-unsplash_xhue4l.jpg",
-    icon: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412658/focus/logos/delivery.jpeg.jpg",
+    name: 'Focus Tech',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
+    icon: DeviceCardsIcon,
+    link: "#jfarms"
   },
   {
-    name: 'Training',
-    summary:
-      'Comprehensive resources and guidance on animal care, breeding, nutrition, and health management.',
-    image: "https://res.cloudinary.com/djykqimfx/image/upload/v1693601910/focus/screenshots/jason-goodman-Oalh2MojUuk-unsplash_xf02aj.jpg",
-    icon: "https://res.cloudinary.com/djykqimfx/image/upload/v1693412776/focus/logos/training.jpeg.jpg"
+    name: 'Focus Analytics',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
+    icon: DeviceClockIcon,
+    link: "#jfarms"
+  },
+  {
+    name: 'Focus Marketting',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
+    icon: DeviceListIcon,
+    link: "#jfarms"
+  },
+  {
+    name: 'Encrypted and anonymized',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
+    icon: DeviceLockIcon,
+    link: "#jfarms"
+  },
+  {
+    name: 'Portfolio tracking',
+    description:
+      'Watch your investments grow exponentially, leaving other investors in the dust.',
+    icon: DeviceChartIcon,
+    link: "#jfarms"
   },
 ]
 
-function Feature({ feature, isActive, className, ...props }) {
+function DeviceArrowIcon(props) {
   return (
-    <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
-      {...props}
-    >
-      <div
-        className={clsx(
-          'w-9 rounded-lg',
-          isActive ? 'bg-green-600' : 'bg-slate-500',
-        )}
-      >
-        <
-          Image src={feature.icon} 
-          width={2245} 
-          height={500}
-        />
-      </div>
-      <h3
-        className={clsx(
-          'mt-6 text-sm font-medium',
-          isActive ? 'text-green-600' : 'text-slate-600',
-        )}
-      >
-        {feature.name}
-      </h3>
-      <p className={clsx(
-        'mt-2 font-display text-xl',
-        isActive ? 'text-green-600' : 'text-slate-600',
-      )}>
-        {feature.summary}
-      </p>
-    </div>
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <path
+        d="M12 25l8-8m0 0h-6m6 0v6"
+        stroke="#171717"
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+    </svg>
   )
 }
 
-function FeaturesMobile() {
+function DeviceCardsIcon(props) {
+  let id = useId()
+
   return (
-    <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
-      {features.map((feature) => (
-        <div key={feature.summary}>
-          <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image
-                className="w-full"
-                src={feature.image}
-                alt=""
-                sizes="52.75rem"
-                width={2245} 
-                height={500}
-              />
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 13a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H10a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H10a1 1 0 01-1-1v-2zm1 5a1 1 0 00-1 1v2a1 1 0 001 1h12a1 1 0 001-1v-2a1 1 0 00-1-1H10z"
+        fill={`url(#${id}-gradient)`}
+      />
+      <rect x={9} y={6} width={14} height={4} rx={1} fill="#171717" />
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <defs>
+        <linearGradient
+          id={`${id}-gradient`}
+          x1={16}
+          y1={12}
+          x2={16}
+          y2={28}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#737373" />
+          <stop offset={1} stopColor="#737373" stopOpacity={0} />
+        </linearGradient>
+      </defs>
+    </svg>
   )
 }
 
-function FeaturesDesktop() {
+function DeviceClockIcon(props) {
   return (
-    <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
-      {({ selectedIndex }) => (
-        <>
-          <Tab.List className="grid grid-cols-3 gap-x-8">
-            {features.map((feature, featureIndex) => (
-              <Feature
-                key={feature.summary}
-                feature={{
-                  ...feature,
-                  name: (
-                    <Tab className="ui-not-focus-visible:outline-none">
-                      <span className="absolute inset-0" />
-                      {feature.name}
-                    </Tab>
-                  ),
-                }}
-                isActive={featureIndex === selectedIndex}
-                className="relative"
-              />
-            ))}
-          </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
-            <div className="-mx-5 flex">
-              {features.map((feature, featureIndex) => (
-                <Tab.Panel
-                  static
-                  key={feature.summary}
-                  className={clsx(
-                    'px-5 transition duration-500 ease-in-out ui-not-focus-visible:outline-none',
-                    featureIndex !== selectedIndex && 'opacity-60',
-                  )}
-                  style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
-                  aria-hidden={featureIndex !== selectedIndex}
-                >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image
-                      className="w-full"
-                      src={feature.image}
-                      alt=""
-                      sizes="52.75rem"
-                      width={2245} 
-                      height={500}
-                    />
-                  </div>
-                </Tab.Panel>
-              ))}
-            </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </Tab.Panels>
-        </>
-      )}
-    </Tab.Group>
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M5 4a4 4 0 014-4h14a4 4 0 014 4v10h-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 002 2h5v2H9a4 4 0 01-4-4V4z"
+        fill="#737373"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 32a8 8 0 100-16 8 8 0 000 16zm1-8.414V19h-2v5.414l4 4L28.414 27 25 23.586z"
+        fill="#171717"
+      />
+    </svg>
+  )
+}
+
+function DeviceListIcon(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <circle cx={11} cy={14} r={2} fill="#171717" />
+      <circle cx={11} cy={20} r={2} fill="#171717" />
+      <circle cx={11} cy={26} r={2} fill="#171717" />
+      <path
+        d="M16 14h6M16 20h6M16 26h6"
+        stroke="#737373"
+        strokeWidth={2}
+        strokeLinecap="square"
+      />
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+    </svg>
+  )
+}
+
+function DeviceLockIcon(props) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M5 4a4 4 0 014-4h14a4 4 0 014 4v10h-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 002 2h5v2H9a4 4 0 01-4-4V4z"
+        fill="#737373"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M18 19.5a3.5 3.5 0 117 0V22a2 2 0 012 2v6a2 2 0 01-2 2h-7a2 2 0 01-2-2v-6a2 2 0 012-2v-2.5zm2 2.5h3v-2.5a1.5 1.5 0 00-3 0V22z"
+        fill="#171717"
+      />
+    </svg>
+  )
+}
+
+function DeviceChartIcon(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M23 13.838V26a2 2 0 01-2 2H11a2 2 0 01-2-2V15.65l2.57 3.212a1 1 0 001.38.175L15.4 17.2a1 1 0 011.494.353l1.841 3.681c.399.797 1.562.714 1.843-.13L23 13.837z"
+        fill="#171717"
+      />
+      <path
+        d="M10 12h12"
+        stroke="#737373"
+        strokeWidth={2}
+        strokeLinecap="square"
+      />
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+    </svg>
   )
 }
 
 export function Services() {
   return (
     <section
-      id="secondary-features"
-      aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      id="businesses"
+      aria-label="Businesses for building a portfolio"
+      className="mt-9 md:-mb-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-green-900 sm:text-4xl">
-            We offer the following additional services!
+        <div className="mx-auto max-w-2xl sm:text-center">
+          <h2 className="text-3xl -mb-6 text-center font-bold tracking-tight text-green-700 sm:text-4xl">
+            Our Businesses.
           </h2>
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
+        <ul
+          role="list"
+          className="mx-auto  grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
+        >
+          {businesses.map((business) => (
+            <a
+              href={business.link}
+              key={business.name}
+              className="rounded-2xl border border-gray-200 p-8"
+            >
+              <business.icon className="h-8 w-8" />
+              <h3 className="mt-6 font-semibold text-gray-900">
+                {business.name}
+              </h3>
+              <p className="mt-2 text-gray-700">{business.description}</p>
+            </a>
+          ))}
+        </ul>
       </Container>
     </section>
   )

@@ -25,7 +25,9 @@ const businesses = [
   {
     name: 'Training and Bootcamps',
     description:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim',
+      "Unleash your coding potential with our \"Introduction to Programming\" course. Over the course of 12 weeks, \
+      participants will dive into the fundamentals of programming languages, logical problem-solving, and algorithmic thinking. \
+     This course is designed to provide a solid foundation for individuals aspiring to embark on a programming journey.",
     icon: DeviceListIcon,
     link: "#jfarms"
   },

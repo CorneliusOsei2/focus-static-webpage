@@ -55,7 +55,8 @@ function Photos() {
 }
 
 export default async function Home() {
-  const about = ""
+  const other = "Our vision is to create a transformative impact on agriculture, entrepreneurship,\
+   and technology across Africa by 2030."
 
   const vision = "We aim to be a beacon of innovation and excellence, \
   leading the way in sustainable agriculture, animal husbandry, and scientific research across Africa. We\
@@ -84,10 +85,18 @@ export default async function Home() {
             </span>{' '}
             in Africa.
           </h1>
-          <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400 w-1/2 pl-3">
-            <h3 className='font-semibold text-green-700 text-lg'>Mission</h3>
-            <p className='text-start'>{vision} </p>
+          <div className="flex px-9">
+            <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400 w-1/2">
+              <h3 className='font-semibold text-green-700 text-lg'>Mission</h3>
+              <p className='text-start'>{vision} </p>
+            </div>
+            <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400 w-1/2 pl-3">
+              <h3 className='font-semibold text-green-700 text-lg'>Project 2030 </h3>
+              <p className='text-start'>{other} </p>
+            </div>
           </div>
+
+
           <div className="mt-6 flex gap-6 mx-auto">
             <SocialLink
               href="https://twitter.com"
